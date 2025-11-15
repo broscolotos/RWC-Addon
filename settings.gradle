@@ -1,0 +1,2 @@
+include ":Traincraft-5"
+project(":Traincraft-5").projectDir = file("../Traincraft-5")
