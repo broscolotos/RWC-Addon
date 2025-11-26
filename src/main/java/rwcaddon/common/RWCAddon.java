@@ -33,9 +33,9 @@ public class RWCAddon {
         addonLog.info("preInit Addon Pack -" + Info.modName);
         rwcAddonTab = new rwcaddon.common.creativetabs.CreativeTabRWCAddon(CreativeTabs.getNextID(), "RWC Addon");
 
-        RWCAddonItems tcModernItems = new RWCAddonItems();
+        new RWCAddonItems();
         RWCAddonRollingStockEntityHandler entityHandler = new RWCAddonRollingStockEntityHandler();
-        rwcAddonTab.setIconItemStack(Items.apple); //TODO change
+        rwcAddonTab.setIconItemStack(RWCAddonItemIDs.dollar.item); //TODO change
 
         if (FMLCommonHandler.instance().getEffectiveSide().isClient()) {
             new rwcaddon.common.core.handler.RWCAddonRollingStockModelHandler();
