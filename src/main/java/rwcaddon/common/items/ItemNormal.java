@@ -7,7 +7,6 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import net.minecraft.util.ResourceLocation;
 import rwcaddon.common.RWCAddon;
 import rwcaddon.common.library.Info;
 
@@ -21,6 +20,8 @@ public class ItemNormal extends Item {
     public ItemNormal(String iconName, int amount) {
         setUnlocalizedName(iconName);
         setCreativeTab(RWCAddon.rwcAddonTab);
+        this.setHasSubtypes(true);
+        this.setMaxDamage(0);
         this.iconName = iconName;
         this.amount = amount;
         icons = new IIcon[this.amount];
